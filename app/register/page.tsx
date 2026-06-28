@@ -35,7 +35,7 @@ export default function RegisterPage() {
       return
     }
 
-    toast.success('Account created! Please check your email to verify.')
+    toast.success('注册成功')
     // 直接登录并跳转
     const { error: loginError } = await supabase.auth.signInWithPassword({ email, password })
     if (!loginError) {
